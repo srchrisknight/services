@@ -1,3 +1,12 @@
+"""
+__init__.py
+
+This module initializes the services package, which supports different digital
+content creation (DCC) applications and operating systems. It automatically
+detects and imports the appropriate sub-module based on the current DCC
+environment or operating system.
+"""
+
 from .common.utils import detect_dcc
 
 dcc_environment = detect_dcc()
